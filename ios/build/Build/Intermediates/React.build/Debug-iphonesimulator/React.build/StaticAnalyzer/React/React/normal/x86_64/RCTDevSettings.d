@@ -1,0 +1,23 @@
+dependencies: \
+  /Users/wangying/Desktop/ReactNativeHello/node_modules/react-native/React/Modules/RCTDevSettings.mm \
+  /Users/wangying/Desktop/ReactNativeHello/node_modules/react-native/React/Modules/RCTDevSettings.h \
+  /Users/wangying/Desktop/ReactNativeHello/node_modules/react-native/React/Base/RCTBridge.h \
+  /Users/wangying/Desktop/ReactNativeHello/node_modules/react-native/React/Base/RCTBridgeDelegate.h \
+  /Users/wangying/Desktop/ReactNativeHello/node_modules/react-native/React/Base/RCTJavaScriptLoader.h \
+  /Users/wangying/Desktop/ReactNativeHello/node_modules/react-native/React/Base/RCTDefines.h \
+  /Users/wangying/Desktop/ReactNativeHello/node_modules/react-native/React/Base/RCTBridgeModule.h \
+  /Users/wangying/Desktop/ReactNativeHello/node_modules/react-native/React/Base/RCTFrameUpdate.h \
+  /Users/wangying/Desktop/ReactNativeHello/node_modules/react-native/React/Base/RCTInvalidating.h \
+  /Users/wangying/Desktop/ReactNativeHello/ios/build/Build/Products/Debug-iphonesimulator/include/jschelpers/JavaScriptCore.h \
+  /Users/wangying/Desktop/ReactNativeHello/ios/build/Build/Products/Debug-iphonesimulator/include/jschelpers/JSCWrapper.h \
+  /Users/wangying/Desktop/ReactNativeHello/node_modules/react-native/React/Modules/JSCSamplingProfiler.h \
+  /Users/wangying/Desktop/ReactNativeHello/node_modules/react-native/React/Base/RCTBridge+Private.h \
+  /Users/wangying/Desktop/ReactNativeHello/node_modules/react-native/React/Base/RCTEventDispatcher.h \
+  /Users/wangying/Desktop/ReactNativeHello/node_modules/react-native/React/Base/RCTLog.h \
+  /Users/wangying/Desktop/ReactNativeHello/node_modules/react-native/React/Base/RCTAssert.h \
+  /Users/wangying/Desktop/ReactNativeHello/node_modules/react-native/React/Base/RCTUtils.h \
+  /Users/wangying/Desktop/ReactNativeHello/node_modules/react-native/React/Profiler/RCTProfile.h \
+  /Users/wangying/Desktop/ReactNativeHello/node_modules/react-native/React/DevSupport/RCTPackagerClient.h \
+  /Users/wangying/Desktop/ReactNativeHello/node_modules/react-native/React/DevSupport/RCTPackagerClientResponder.h \
+  /Users/wangying/Desktop/ReactNativeHello/node_modules/react-native/React/DevSupport/RCTReloadPackagerMethod.h \
+  /Users/wangying/Desktop/ReactNativeHello/node_modules/react-native/React/DevSupport/RCTSamplingProfilerPackagerMethod.h

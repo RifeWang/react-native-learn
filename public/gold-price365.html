@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>ECharts</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=1">
+    <style type="text/css">
+        html{font-size:10px}
+    	@media screen and (min-width:321px) and (max-width:375px){html{font-size:11px}}
+    	@media screen and (min-width:376px) and (max-width:414px){html{font-size:12px}}
+		@media screen and (min-width:415px) and (max-width:639px){html{font-size:15px}}
+		@media screen and (min-width:640px) and (max-width:719px){html{font-size:20px}}
+		@media screen and (min-width:720px) and (max-width:749px){html{font-size:22.5px}}
+		@media screen and (min-width:750px) and (max-width:799px){html{font-size:23.5px}}
+		@media screen and (min-width:800px){html{font-size:25px}}
+    </style>
+    <!-- 引入 echarts.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/3.6.1/echarts.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
+</head>
+<body>
+    <!-- 为ECharts准备一个具备大小（宽高）的Dom -->
+    <div id="main" style="width:30rem;height:18rem;"></div>
+    <script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('main'));
+        var xdata = [];//存储x轴数据
+        var sdata = [];//存储y轴数据
+        var settings = {
+            "url": "http://106.14.165.194:8000/history-price",
+            "method": "GET",
+        }
+        myChart.showLoading();//添加loading动画
+        $.ajax(settings).done(function (response) {
+            console.log(JSON.parse(response).year);
+            Array.from(JSON.parse(response).year).forEach( (element) => {
+                xdata.push(moment(element.add_time).format('YYYY-MM-DD'));
+                sdata.push(element.every_day_price);
+            });
+            // 指定图表的配置项和数据
+            var option = {
+                title: {
+                    left: 'center',
+                    text: '365天金价走势'
+                },
+                tooltip: {
+                    trigger: 'axis',//提示框组件，坐标轴触发
+                    axisPointer: {
+                        type: 'line'
+                    }
+                },
+                xAxis: {
+                    type: 'category',
+                    boundaryGap: false,
+                    axisTick: {
+                        alignWithLabel: true,//刻度线与标签对齐
+                        interval: 10 //坐标轴刻度间隔
+                    },
+                    axisLabel: {
+                        // 使用函数模板，函数参数分别为刻度数值（类目），刻度的索引
+                        formatter: function (value, index) {
+                            // 格式化时间,只显示小时分钟
+                            return moment(value).format('MM-DD');
+                        }
+                    },
+                    data: xdata
+                },
+                yAxis: {
+                    type: 'value',
+                    boundaryGap: [0, '50%'],
+                    scale: true
+                },
+                series: [{
+                    name: 'price',
+                    type: 'line',
+                    showSymbol: false, //只在tooltip hover的时候显示
+                    smooth: false,//平滑显示
+                    itemStyle: {
+                        normal: {
+                            color: 'rgb(255, 70, 131)',
+                        }
+                    },
+                    areaStyle: {
+                        normal: {//区域填充样式
+                            color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
+                            offset: 0,
+                            color: 'rgb(255, 70, 131)'
+                            }, {
+                            offset: 1,
+                            color: 'rgb(255, 158, 68)'
+                            }])
+                        }
+                    },
+                    data: sdata
+                }]
+            };
+            myChart.hideLoading();//数据加载完成，隐藏loading动画
+
+            // 使用刚指定的配置项和数据显示图表。
+            myChart.setOption(option);
+        });
+    </script>
+</body>
+</html>

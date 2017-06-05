@@ -1,0 +1,31 @@
+dependencies: \
+  /Users/wangying/Desktop/ReactNativeHello/node_modules/react-native/Libraries/Image/RCTImageView.m \
+  /Users/wangying/Desktop/ReactNativeHello/node_modules/react-native/Libraries/Image/RCTImageView.h \
+  /Users/wangying/Desktop/ReactNativeHello/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTResizeMode.h \
+  /Users/wangying/Desktop/ReactNativeHello/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTConvert.h \
+  /Users/wangying/Desktop/ReactNativeHello/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTAnimationType.h \
+  /Users/wangying/Desktop/ReactNativeHello/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTBorderStyle.h \
+  /Users/wangying/Desktop/ReactNativeHello/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTDefines.h \
+  /Users/wangying/Desktop/ReactNativeHello/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTLog.h \
+  /Users/wangying/Desktop/ReactNativeHello/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTAssert.h \
+  /Users/wangying/Desktop/ReactNativeHello/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTUtils.h \
+  /Users/wangying/Desktop/ReactNativeHello/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTPointerEvents.h \
+  /Users/wangying/Desktop/ReactNativeHello/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTTextDecorationLineType.h \
+  /Users/wangying/Desktop/ReactNativeHello/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/Yoga.h \
+  /Users/wangying/Desktop/ReactNativeHello/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/YGEnums.h \
+  /Users/wangying/Desktop/ReactNativeHello/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/YGMacros.h \
+  /Users/wangying/Desktop/ReactNativeHello/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTBridge.h \
+  /Users/wangying/Desktop/ReactNativeHello/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTBridgeDelegate.h \
+  /Users/wangying/Desktop/ReactNativeHello/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTJavaScriptLoader.h \
+  /Users/wangying/Desktop/ReactNativeHello/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTBridgeModule.h \
+  /Users/wangying/Desktop/ReactNativeHello/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTFrameUpdate.h \
+  /Users/wangying/Desktop/ReactNativeHello/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTInvalidating.h \
+  /Users/wangying/Desktop/ReactNativeHello/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTEventDispatcher.h \
+  /Users/wangying/Desktop/ReactNativeHello/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTImageSource.h \
+  /Users/wangying/Desktop/ReactNativeHello/ios/build/Build/Products/Debug-iphonesimulator/include/React/UIView+React.h \
+  /Users/wangying/Desktop/ReactNativeHello/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTComponent.h \
+  /Users/wangying/Desktop/ReactNativeHello/node_modules/react-native/Libraries/Image/RCTImageBlurUtils.h \
+  /Users/wangying/Desktop/ReactNativeHello/node_modules/react-native/Libraries/Image/RCTImageLoader.h \
+  /Users/wangying/Desktop/ReactNativeHello/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTURLRequestHandler.h \
+  /Users/wangying/Desktop/ReactNativeHello/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTURLRequestDelegate.h \
+  /Users/wangying/Desktop/ReactNativeHello/node_modules/react-native/Libraries/Image/RCTImageUtils.h
