@@ -38,7 +38,8 @@ export default class Footer extends Component{
     webviewTest(){
         return (
             <WebView
-                source={require('./public/gold-price365.html')}
+               source={require('./public/gold-price365.html')}
+                // source={{url: 'https://s3.amazonaws.com/avos-cloud-ksgwaaamecbl/ff296fe394e9acc5febb.html'}}
                 domStorageEnabled={true} //android
                 javaScriptEnabled={true} //android
             />
